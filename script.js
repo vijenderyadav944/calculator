@@ -7,7 +7,7 @@ function cal(inp){
     if(inp==='='){
         if(typeof b == 'number' && typeof a == 'number' && typeof o == 'string'){
             result.innerHTML = calulate(a,o,b)
-            a=null 
+            a=result.innerHTML 
             b=null
             o=null
         }
@@ -38,4 +38,10 @@ function calulate(a,o,b){
     }else if(o=='/'){
         return a/b
     }
+}
+function reset(){
+    result.innerHTML = 0
+    a=0
+    o=null
+    b=0
 }
