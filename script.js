@@ -8,7 +8,7 @@ function cal(inp){
         if(typeof b == 'number' && typeof a == 'number' && typeof o == 'string'){
             result.innerHTML = calulate(a,o,b)
             a=result.innerHTML 
-            b=null
+            b=0
             o=null
         }
     }
